@@ -1,0 +1,26 @@
+[project]
+name = "flaskr"
+version = "1.0.0"
+authors = [
+  { name="Author", email="author@example.com" },
+]
+maintainers = [
+  { name="Maintainer", email="maintainer@example.com" },
+]
+description = "The basic blog app built in the Flask tutorial."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "flask",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["flaskr"]
