@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# 临时测试文件
+*.xls
+*.xlsx
