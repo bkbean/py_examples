@@ -17,6 +17,8 @@ dist/
 .venv
 
 # 临时测试文件
+测试.ipynb
+性能测试.ipynb
 *.xlsx
 
 # 输出目录
