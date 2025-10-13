@@ -17,12 +17,11 @@ def setup_logging(log_level=logging.INFO):
     # 日志系统支路阀门, 只输出高于设定级别的日志记录
     console_handler.setLevel(log_level)
     console_handler.setFormatter(formatter)
-    
-    # 清除现有handlers避免重复
-    root_logger.handlers.clear()
-    
-    # 添加Handler
-    root_logger.addHandler(console_handler)
+
+    # 避免重复添加 handler
+    if not root_logger.handlers:
+        root_logger.addHandler(console_handler)
+
 
 # 初始化日志配置
 setup_logging()
