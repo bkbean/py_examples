@@ -1,0 +1,7 @@
+[project]
+name = "py-examples"
+version = "0.1.0"
+description = "Python 代码示例"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
